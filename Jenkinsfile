@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat "copy target\spring-petclinic-2.3.1.BUILD-SNAPSHOT.war 'C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps\'"
+                bat 'copy target\\spring-petclinic-2.3.1.BUILD-SNAPSHOT.war "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.0\\webapps\\"'
             }
         }        
     }
