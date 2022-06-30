@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'copy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Springboot_pipeline\\target\\spring-petclinic-2.3.1.BUILD-SNAPSHOT.war "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.0\\webapps\\"'
+                bat 'copy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Springboot_pipeline\\target\\spring-boot-rest-example-0.5.0.war "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.0\\webapps\\"'
             }
         }        
     }
