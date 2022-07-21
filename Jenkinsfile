@@ -10,9 +10,7 @@ pipeline {
         }
         stage('Dev Approval') {
             steps {
-     emailext attachLog: true, body: '''Please approve 
-
-$BUILD_URL''', subject: 'Request for Deployment Approval', to: 'rajeshvenigalla2228@gmail.com'           
+     emailext attachLog: true, body: '''Please approve $BUILD_URL''', subject: 'Request for Deployment Approval', to: 'rajeshvenigalla2228@gmail.com'   
      timeout(time: 600, unit: 'SECONDS') {
      input message: 'Waiting for Deployment approval', ok: 'Approve', submitter: 'admin', submitterParameter: 'approved_users'
                 }          
