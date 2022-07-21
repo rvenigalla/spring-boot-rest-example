@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cp target/spring-boot-rest-example-0.5.0.war /home/ec2-user/apache-tomcat-9.0.63/webapps/'
+                sh 'cp target/spring-boot-rest-example-0.5.0.war /opt/apache-tomcat-9.0.63/webapps/'
             }
         }        
     }
