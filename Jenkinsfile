@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker build -t rajeshvenigalla/spring-boot-rest-example:v${BUILD_ID}'
+                sh 'docker build -t rajeshvenigalla/spring-boot-rest-example:v${BUILD_ID} .'
             }
         }
 		stage('push image') {
